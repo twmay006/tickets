@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>手机验证</title>
+		<link href="../css/bootstrap.min.css" rel="stylesheet">
+		<script src="../js/jquery.min.js"></script>
+		<script src="../js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="new_file.js"></script>
+	</head>
+
+	<body>
+		<form>
+			<div class="username_input"><span>密&nbsp;&nbsp;&nbsp;码</span>
+				<input type="password" name="psw" id="psw" data-container="body" data-toggle="popover" data-placement="right" data-content="密码长度6-20位、不能为同一个字符、不能全是数字、只能有数字、字母和常用特殊字符">
+				</input>
+			</div>
+			<div class="username_input"><span>电话号码</span>
+				<input type="text" name="phone" id="phone" value="11位数字" onfocus="this.value='';" onblur="if(this.value==''){this.value='11位数字';}">
+				</input>
+			</div>
+			<div class="username_input"><span>邮&nbsp;&nbsp;&nbsp;箱</span>
+				<input name="email" id="email" id="email" type="text" value="address@example.com" onfocus="this.value='';" onblur="if(this.value==''){this.value='address@example.com';}">
+				</input>
+			</div>
+			<input class="key" type="submit" value="注册" onClick="return IsEmail();">
+		</form>
+
+   <script>$(function () 
+      {
+      	var my = document.getElementById('psw');
+			if (my.onfocus) {
+  			  $("[data-toggle='popover']").popover();
+			} }
+      	
+      });
+   </script>
+	</body>
+
+</html>

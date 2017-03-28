@@ -1,0 +1,212 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="chrome=1">
+		<title>个人信息</title>
+		<link rel="stylesheet" type="text/css" href="css/style1.css">
+		<link rel="stylesheet" type="text/css" href="css/easy-responsive-tabs.css " />
+		<script src="js/jquery-1.9.1.min.js"></script>
+		<script src="js/easyResponsiveTabs.js"></script>
+
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="header">
+				<div class="logo">
+					<a href="first_page.html"><span>Studio</span>112</a>
+				</div>
+				<div class="header-right">
+					<a class="rheader" href="login.html">个人中心</a>
+					<a class="rheader" href="first_page.html">系统首页</a>
+				</div>
+			</div>
+			<div class="position">
+				<label style="font-size:18px;">您现在的位置：系统首页>><span style="font-weight:bolder;">个人信息</span></label>
+			</div>
+			<br />
+			<br />
+			<div id="parentVerticalTab" style="font-family:幼圆">
+				<ul class="resp-tabs-list hor_1">
+					<li>查看个人信息</li>
+					<li>修改个人信息</li>
+					<li>修改密码</li>
+					<li>常用联系人</li>
+				</ul>
+				<div class="resp-tabs-container hor_1">
+					<div align="center">
+						<div>
+							<hr width=70% size=4 color=#01A185>
+							<h4>*基本信息</h4>
+							<hr width=70% size=1 color=#01A185>
+						</div>
+						<div>
+							<dl>
+								<dt>*用户名:</dt>
+								<dt>*姓名:</dt>
+								<dt>*性别:</dt>
+								<dt>国家/地区:</dt>
+								<dt>*证件类型:</dt>
+								<dt>*证件号码:</dt>
+								<dt>出生日期:</dt>
+								<dt>核验状态:</dt>
+							</dl>
+						</div>
+
+						<div>
+							<hr width=70% size=4 color=#01A185>
+							<h4>*联系方式</h4>
+							<hr width=70% size=1 color=#01A185>
+						</div>
+						<div>
+							<dl>
+								<dt>*手机号码:</dt>
+								<dt>电子邮件:</dt>
+								<dt>地址:</dt>
+								<dt>邮编:</dt>
+							</dl>
+						</div>
+
+						<div>
+							<hr width=70% size=4 color=#01A185>
+							<h4>*附加信息</h4></div>
+							<hr width=70% size=1 color=#01A185>
+						<div>
+							<dl>
+								<dt>*旅客类型:</dt>
+							</dl>
+						</div>
+					</div>
+
+					<div>
+						<h4>修改基本信息</h4>
+						<form action="" method="post" name="register">
+							*用户名:<input type="text" name="username"><br> *姓名:
+							<input type="text" name="name"><br> *性别:
+							<input type="radio" name="sex" value="1" checked>男
+							<input type="radio" name="sex" value="2">女<br> 国家/地区:
+							<input type="radio" name="name" value="1" checked>中国内地
+							<input type="radio" name="name" value="2">港澳台<br> *证件类型:
+							<input type="radio" name="name" value="1" checked>一代身份证
+							<input type="radio" name="name" value="2">二代身份证<br> *证件号码:
+							<input type="number" name="number"><br> 出生日期:
+							<input type="datetime-local" name="number"><br> 核验状态:
+							<select name="id">
+								<option value="1">已通过
+									<option value="2" selected>未通过
+							</select><br>
+
+							<h4>修改联系方式</h4> *手机号码:
+							<input type="number" name="number"><br> 电子邮件:
+							<input type="text" name="email"><br> 地址:
+							<input type="text" name="address"><br> 邮编:
+							<input type="number" name="number"><br>
+							<h4>*修改附加消息</h4> *旅客类型
+							<select name="id">
+								<option value="1">学生
+									<option value="2">成人
+										<option value="3" selected>儿童
+							</select><br>
+							<input type=submit name="submit" value="提交">
+							<input type=reset name="reset" value="重置">
+						</form>
+					</div>
+
+					<div align="center">
+						<h4>修改密码</h4>
+						<form action="" method="post" name="register">
+							*用户名:<input type="text" name="username">
+							<br>
+							*旧密码:<input type="password" name="passwd">
+							<br>
+							*新密码:<input type="password" name="passwd">
+							<br> 
+							*确认新密码:<input type="password" name="passwd">
+							<br>
+							<input type=submit name="submit" value="提交">
+							<input type=reset name="cancle" value="取消">
+						</form>
+					</div>
+
+					<div align="center">
+						<h4>常用联系人</h4>
+						<table border="2" cellspacing="4" cellpadding="4">
+
+							<tr>
+								<td>序号</td>
+								<td> 姓名</td>
+								<td>证件类型</td>
+								<td>证件号码 </td>
+								<td>手机号码</td>
+								<td>旅客类型</td>
+								<td>核验状态</td>
+								<td>操作</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" name="number" id="number" value="" /></td>
+								<td> a</td>
+								<td>b</td>
+								<td>c </td>
+								<td>d</td>
+								<td>e</td>
+								<td>f</td>
+								<td><input type="radio" name="name" value="1" checked>删除
+									<input type="radio" name="name" value="2">编辑<br></td>
+							</tr>
+
+						</table>
+					</div>
+
+				</div>
+				<!--Plug-in Initialisation-->
+				<script type="text/javascript">
+					$(document).ready(function() {
+						//Horizontal Tab
+						$('#parentHorizontalTab').easyResponsiveTabs({
+							type: 'default', //Types: default, vertical, accordion
+							width: 'auto', //auto or any width like 600px
+							fit: true, // 100% fit in a container
+							tabidentify: 'hor_1', // The tab groups identifier
+							activate: function(event) { // Callback function if tab is switched
+								var $tab = $(this);
+								var $info = $('#nested-tabInfo');
+								var $name = $('span', $info);
+								$name.text($tab.text());
+								$info.show();
+							}
+						});
+
+						// Child Tab
+						$('#ChildVerticalTab_1').easyResponsiveTabs({
+							type: 'vertical',
+							width: 'auto',
+							fit: true,
+							tabidentify: 'ver_1', // The tab groups identifier
+							activetab_bg: '#fff', // background color for active tabs in this group
+							inactive_bg: '#F5F5F5', // background color for inactive tabs in this group
+							active_border_color: '#c1c1c1', // border color for active tabs heads in this group
+							active_content_border_color: '#5AB1D0' // border color for active tabs contect in this group so that it matches the tab head border
+						});
+
+						//Vertical Tab
+						$('#parentVerticalTab').easyResponsiveTabs({
+							type: 'vertical', //Types: default, vertical, accordion
+							width: 'auto', //auto or any width like 600px
+							fit: true, // 100% fit in a container
+							closed: 'accordion', // Start closed if in accordion view
+							tabidentify: 'hor_1', // The tab groups identifier
+							activate: function(event) { // Callback function if tab is switched
+								var $tab = $(this);
+								var $info = $('#nested-tabInfo2');
+								var $name = $('span', $info);
+								$name.text($tab.text());
+								$info.show();
+							}
+						});
+					});
+				</script>
+	</body>
+
+</html>

@@ -1,0 +1,127 @@
+a{
+	 transition:0.5s all;
+	-webkit-transition:0.5s all;
+	-moz-transition:0.5s all;
+	-o-transition:0.5s all;
+	-ms-transition:0.5s all;
+	font-weight:400;
+	font-family: 'Open Sans', sans-serif;
+	text-decoration: none;
+}
+input[type="button"],input[type="submit"]{
+	transition:0.5s all;
+	-webkit-transition:0.5s all;
+	-moz-transition:0.5s all;
+	-o-transition:0.5s all;
+	-ms-transition:0.5s all;
+}
+
+.container{
+	padding:0;
+	width:70%;
+	font-family: 'Open Sans', sans-serif;
+	background:#fff;
+	margin:auto;
+	height:800px;
+	position:relative;
+	border:1px solid #B6B6B6;
+}
+.header {
+    padding-left:20px;
+    background-color:#EEE;
+	border-bottom:1px solid #B6B6B6;
+}
+.logo {
+    display:inline-block;
+}
+.logo a {
+	font-family: 'Ubuntu Condensed', sans-serif;
+	font-size: 50px;
+    color: #01a185;
+	text-decoration:none;
+}
+.logo a span {
+	color:#f3c500;
+}
+a.rheader {
+    float: right;
+    margin-top: 20px;
+	margin-right:20px;
+    font-size: 15px;
+    color: #fff;
+    background-color: #01a185;
+    padding: 6px 10px;
+    text-decoration: none;
+}
+a.rheader:hover {
+	background-color: #f3c500;
+}
+.header-right{
+	padding-right:20px;
+	display:inline-block;
+	float:right;
+}
+.login_center label{
+	margin-right:10%;
+	display:inline-block;
+}
+.login_center a{
+	font-size: 17px;
+	color:#9A9A9A;
+}
+input[type="text"],input[type="password"]{
+	display:inline-block;
+	width:45%;
+	margin:auto 50px;
+	line-height:25px;
+}
+.position{
+	padding-top:10px;
+	padding-left:20px;
+	background-color:#fff;
+}
+.login_center{
+	width:60%;
+	height:400px;
+	font-size:24px;
+	margin: 200px auto auto;
+	padding-left:20px;
+	margin-bottom:60px;
+}
+.username_input{
+	margin-bottom:50px;
+}
+input[type="button"],input[type="submit"],input[type="reset"]{
+	display:inline-block;
+	outline:none;
+	font-size:17px;
+	background-color:#01a185;
+	padding:5px 0;
+	color:white;
+}
+form input[type="button"],input[type="submit"],input[type="reset"]{
+	width:15%;
+	margin:0.5em 0 0 20%;
+}
+.container footer{
+	margin-bottom:20px;
+}
+.diff p{
+	 color: #979797;
+    font-size: 14px;
+	
+}
+.diff p a {
+	color:#F3C506;
+	margin-left:2px;
+}
+.diff p a:hover {
+	color:#01A185;
+}
+footer.diff {
+	text-align:center;
+	padding: 0 15px;
+}
+.key:hover{
+	background-color:#f3c500;
+}
